@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: httpd-config
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>HTTPD - Gigih Satriono</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+                color: white;
+                padding: 50px;
+            }
+            h1 { font-size: 3em; }
+        </style>
+    </head>
+    <body>
+        <h1>Hello from HTTPD!</h1>
+        <p>Deployed with ArgoCD GitOps</p>
+        <p>Nama: Gigih Satriono</p>
+        <p>Role: DevOps Engineer</p>
+    </body>
+    </html>
